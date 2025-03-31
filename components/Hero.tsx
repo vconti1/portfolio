@@ -3,12 +3,13 @@
 import React from 'react'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import { cn } from '@/utils/cn'
+import LitUpBordersButton from './ui/LitUpBordersButton';
+import { FaLocationArrow } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
 
-<div className=" flex h-screen w-full items-center justify-center ">
+<div className=" flex h-screen w-full items-center justify-center overflow-hidden ">
       <div
         className={cn(
           "absolute inset-0",
@@ -28,19 +29,22 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg: text-6xl"
             words="Transforming Concepts into Seamless Experiences"
             />
+            <p className="text-center md:tracking-wider pt-4 mb-4 text-sm md:text-lg lg:text-2xl"> Hi, I&apos;m Vincent, a computer science student at Montgomery College!
+            </p>
+
+            <a href="#about">
+              <LitUpBordersButton
+              title= "Show my work"
+              icon={<FaLocationArrow/>}
+              position ='right'
+              />
+            </a>
+
             </div>
         </div>
 
     </div>
 
-
-
-
-
-
-
-    
-    </div>
   )
 }
 
