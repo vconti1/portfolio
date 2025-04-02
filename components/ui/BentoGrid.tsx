@@ -45,7 +45,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 relative rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
+        "group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 relative overflow-hidden rounded-3xl border border-neutral-200 bg-white p-4 transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none",
         className,
       )}
       style={{
@@ -93,9 +93,43 @@ export const BentoGridItem = ({
             <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
           {title}
             </div>
-          </div>
+          
 
             {id === 2 && <GlobeDemo/>}
+            #TODO FIX THE TECH STACK BOX ALIGNMENT
+            {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+              {/* tech stack lists */}
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                {['React.js', 'React.js', 'React.js', 'React.js'].map((item) => (
+                  <span
+                    key={item}
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#101010]"
+                  >
+                    {item}
+                  </span>
+                ))}
+
+              <span className="py-4 px-3 rounded-lg text-center bg-[#101010]"/>
+              </div>
+
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#101010]"></span>
+                {['React.js', 'React.js', 'React.js'].map((item) => (
+                  <span
+                    key={item}
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-100 rounded-lg text-center bg-[#101010]"
+                  >
+                    {item}
+                  </span>
+                ))}
+
+                <span className="py-4 px-3 rounded-lg text-center bg-[#101010]"/>
+              </div>
+            </div>
+          )}
 
       </div>
 
@@ -103,7 +137,7 @@ export const BentoGridItem = ({
       <div className="transition duration-200 group-hover/bento:translate-x-2">
        
 
-        
+      </div>
       </div>
     </div>
   );
