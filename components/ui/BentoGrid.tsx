@@ -1,6 +1,13 @@
+'use client';
+
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
+import Lottie from "react-lottie";
+import { useState } from "react";
+import animationData from '@/data/confetti.json';
+import { IoCopyOutline } from "react-icons/io5";
+import LitUpBordersButton from "./LitUpBordersButton";
 
 export const BentoGrid = ({
   className,
@@ -42,6 +49,10 @@ export const BentoGridItem = ({
   spareImg?:string;
   id: number;
 }) => {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText('sampleemail@email.com')
+  }
   return (
     <div
       className={cn(
@@ -135,11 +146,26 @@ export const BentoGridItem = ({
             </div>
           )}
 
+          {/* For some reason, the confetti animation is not playing when the button is clicked */}
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                
+                <Lottie options={{
+                  loop: copied,
+                  autoplay: copied,
+                  animationData,
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice'
+                  }
+                }}/>
               </div>
+              <LitUpBordersButton
+              title = {copied ? 'Email copied' : 'Copy my email'}
+              icon = {<IoCopyOutline />}
+              position = 'left'
+              handleClick = {handleCopy}
+              otherClasses="!bg-[#161a31]"
+              />
             </div>
           )}
         
