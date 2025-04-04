@@ -11,11 +11,11 @@ export const navItems = [
     {
       id: 1,
       title: " I'm not sure what to put in these yet ",
-      description: "Hi",
+      description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-2",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: "/aerodynamicivy.JPG",
       spareImg: "",
     },
     {
@@ -61,7 +61,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
+      title: "You can contact me via email if you have any questions!",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",

@@ -49,10 +49,16 @@ export const BentoGridItem = ({
   spareImg?:string;
   id: number;
 }) => {
+
   const [copied, setCopied] = useState(false);
+
   const handleCopy = () => {
-    navigator.clipboard.writeText('sampleemail@email.com')
-  }
+    const text = "vincentconti399@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
+
   return (
     <div
       className={cn(
@@ -65,7 +71,7 @@ export const BentoGridItem = ({
       }}
     >
       
-      <div className={`${id === 6} && 'flex justify-center h-full`}>
+      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
           <div className="w-full h-full absolute">
             {img && (
               <img 
@@ -150,19 +156,21 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
+                {/** 
                 <Lottie options={{
                   loop: copied,
                   autoplay: copied,
                   animationData,
                   rendererSettings: {
-                    preserveAspectRatio: 'xMidYMid slice'
+                  preserveAspectRatio: 'xMidYMid slice',
                   }
                 }}/>
+                */}
               </div>
               <LitUpBordersButton
-              title = {copied ? 'Email copied' : 'Copy my email'}
+              title = {copied ? "Email copied to clipboard" : "Copy my email address"}
               icon = {<IoCopyOutline />}
-              position = 'left'
+              position = "left"
               handleClick = {handleCopy}
               otherClasses="!bg-[#161a31]"
               />
