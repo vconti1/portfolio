@@ -96,12 +96,14 @@ export const BentoGridItem = ({
           
 
             {id === 2 && <GlobeDemo/>}
-            #TODO FIX THE TECH STACK BOX ALIGNMENT
+            
             {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                {['React.js', 'React.js', 'React.js', 'React.js'].map((item) => (
+
+              {/* LEFT COLUMN */}
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
+                {['React.js', 'React.js', 'React.js'].map((item) => (
                   <span
                     key={item}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
@@ -114,9 +116,10 @@ export const BentoGridItem = ({
               <span className="py-4 px-3 rounded-lg text-center bg-[#101010]"/>
               </div>
 
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#101010]"></span>
-                {['React.js', 'React.js', 'React.js'].map((item) => (
+               {/* RIGHT COLUMN */}
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
+                
+                {['React.js', 'hi', 'React.js'].map((item) => (
                   <span
                     key={item}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
@@ -125,7 +128,6 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-
                 <span className="py-4 px-3 rounded-lg text-center bg-[#101010]"/>
               </div>
             </div>
@@ -137,7 +139,7 @@ export const BentoGridItem = ({
       <div className="transition duration-200 group-hover/bento:translate-x-2">
        
 
-      </div>
+        </div>
       </div>
     </div>
   );
