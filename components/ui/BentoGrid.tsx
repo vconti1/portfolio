@@ -98,37 +98,39 @@ export const BentoGridItem = ({
             {id === 2 && <GlobeDemo/>}
             
             {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-3 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
 
               {/* LEFT COLUMN */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
-                {['React.js', 'React.js', 'React.js'].map((item) => (
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-3">
+                {['Next.js', 'Node.js', 'TypeScript','HTML'].map((item) => (
                   <span
                     key={item}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#101010]"
+                    className="lg:py-4 lg:px-4 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-50 rounded-lg text-center bg-[#101010]"
                   >
                     {item}
                   </span>
                 ))}
 
-              <span className="py-4 px-3 rounded-lg text-center bg-[#101010]"/>
+              <span className="lg:py-4 lg:px-4 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-50 rounded-lg text-center bg-[#101010]"/>
               </div>
 
-               {/* RIGHT COLUMN */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-4">
+               {/* RIGHT COLUMN (spans can be tricky to align with longer strings so the padding may differ between left and right columns) */}
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-3">
                 
-                {['React.js', 'hi', 'React.js'].map((item) => (
+                { ['','MongoDB', 'Java', 'JavaScript'].map((item) => (
                   <span
                     key={item}
                     className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#101010]"
+                    lg:opacity-50 rounded-lg text-center bg-[#101010]"
                   >
                     {item}
                   </span>
                 ))}
-                <span className="py-4 px-3 rounded-lg text-center bg-[#101010]"/>
+                <span className="lg:py-4 lg:px-4 py-2 px-3 text-xs lg:text-base opacity-50 
+                    lg:opacity-50 rounded-lg text-center bg-[#101010]">  {'CSS'} </span>
               </div>
             </div>
           )}
