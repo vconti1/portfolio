@@ -14,7 +14,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-6 md:row-span-2",
       imgClassName: "w-full h-full object-cover rounded-2xl scale-120",
       titleClassName: "justify-end",
-      img: "/vincentepic.JPG",
+      img: "/vincentepic.jpg",
       spareImg: "",
     },
     {
@@ -77,7 +77,7 @@ export const navItems = [
       des: "Description",
       img: "/aerodynamicivy.JPG",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "",
+      link: "https://github.com/vconti1",
     },
     {
       id: 2,
@@ -85,7 +85,7 @@ export const navItems = [
       des: "Description",
       img: "/aerodynamicivy.JPG",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "",
+      link: "https://github.com/vconti1",
     },
     {
       id: 3,
@@ -93,7 +93,7 @@ export const navItems = [
       des: "Description",
       img: "/aerodynamicivy.JPG",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "",
+      link: "https://github.com/vconti1",
     },
     {
       id: 4,
@@ -101,7 +101,7 @@ export const navItems = [
       des: "Description",
       img: "/aerodynamicivy.JPG",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "",
+      link: "https://github.com/vconti1",
     },
   ];
   

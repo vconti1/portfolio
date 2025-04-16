@@ -3,9 +3,7 @@
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
-import Lottie from "react-lottie";
 import { useState } from "react";
-import animationData from '@/data/confetti.json';
 import { IoCopyOutline } from "react-icons/io5";
 import LitUpBordersButton from "./LitUpBordersButton";
 

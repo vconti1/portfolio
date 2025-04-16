@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="w-full pt-20 pb-10 z-10 relative" id="contact">
         <div className="flex flex-col items-center">
             <h1 className="heading lg:max-w-[45vw]">
-                I'm always looking for the next challenge.
+                I&apos;m always looking for the next challenge.
             </h1>
             <p className="text-white-200 md:mt-10 my-5 text-center">Reach out to me!</p>
             <a href="mailto:vincentconti399@gmail.com">
