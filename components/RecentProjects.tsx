@@ -21,7 +21,7 @@ const RecentProjects = () => {
                 <img
                 src={img}
                 alt={title}
-                className="z-10 absolute bottom-0"
+                className="z-10 absolute bottom-0 rounded-2xl"
                 />
             </div>
 
@@ -33,6 +33,7 @@ const RecentProjects = () => {
                 {des}
             </p>
 
+{/*
             <div className="flex items-center justidy-between mt-7 mb-3">
                 <div className="flex items-center">
                     {iconLists.map((icon,index)=>(
@@ -47,7 +48,7 @@ const RecentProjects = () => {
                     <FaLocationArrow className="ms-3" color="#CBACF9"/>
                 </div>
             </div>
-
+*/}
           </PinContainer>
         </div> 
     ))}
