@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Vincent Conti | Full-Stack Engineer",
   description: "Projects and experience in full-stack development.",
+  icons: {
+    icon: '/favicon-32x32.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
