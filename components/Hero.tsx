@@ -9,7 +9,7 @@ import { FaLocationArrow } from 'react-icons/fa';
 const Hero = () => {
   return (
 
-<div className="flex h-screen w-full items-center overflow-hidden">
+<div className="flex h-screen w-full items-center justify-center overflow-hidden">
       <div
         className={cn(
           "absolute inset-0 z-0",
