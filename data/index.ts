@@ -50,12 +50,12 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building my own Redis",
+      title: "Currently studying embedded systems",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60 opacity-50 scale-250",
+      imgClassName: "absolute right-15 bottom-15 md:w-50 w-50 opacity-50 scale-225",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/redisLogo.png",
+      img: "/C_Logo.png",
       spareImg: "",
     },
     {
@@ -73,12 +73,12 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "Under construction...",
-      des: "Completed projects will appear here.",
+      title: "Cannon Simulator",
+      des: "A Java-based 2D cannon simulator. Rotate a cannon and launch rubber cannonballs at adjustable speed.",
       imgClassName: "rounded-2xl",
-      img: "/aerodynamicivy.JPG",
+      img: "/CANNONSIM3.JPG",
       iconLists: [""],
-      link: "https://github.com/vconti1",
+      link: "https://github.com/vconti1/Cannon",
     },
     {
       id: 2,

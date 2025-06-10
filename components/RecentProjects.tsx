@@ -9,6 +9,7 @@ const RecentProjects = () => {
         <h1 className="heading"> 
         Recent Projects
         </h1>
+        
      <div className="flex flex-wrap items-center justify-center gap-x-24 gap-y-8 mt-10">
     {projects.map(({id,title,des,img,iconLists,link})=> (
         
