@@ -76,7 +76,7 @@ export const navItems = [
       title: "Cannon Simulator",
       des: "A Java-based 2D cannon simulator. Rotate a cannon and launch rubber cannonballs at adjustable speed.",
       imgClassName: "rounded-2xl",
-      img: "/CANNONSIM3.JPG",
+      img: "/cannonsim.JPG",
       iconLists: [""],
       link: "https://github.com/vconti1/Cannon",
     },
