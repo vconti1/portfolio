@@ -35,7 +35,7 @@ const RecentProjects = () => {
                 {des}
             </p>
 
-{/*
+{/* 
             <div className="flex items-center justidy-between mt-7 mb-3">
                 <div className="flex items-center">
                     {iconLists.map((icon,index)=>(
@@ -45,13 +45,10 @@ const RecentProjects = () => {
                         </div>
                     ))}
                 </div>
-                <div>
-                    <p>Check it out!</p>
-                    <FaLocationArrow className="ms-3" color="#CBACF9"/>
-                </div>
             </div>
 */}
           </PinContainer>
+
         </div> 
     ))}
     </div>

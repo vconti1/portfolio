@@ -73,20 +73,20 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
+      title: "Better Weather",
+      des: "A simple, responsive weather app that provides real-time weather data based on user input. Built with Next.js.",
+      img: "/better-weather-image.png",
+      iconLists: [""],
+      link: "https://better-weather-evgm-1da5byqhn-vincents-projects-54608fda.vercel.app/",
+    },
+    {
+      id: 2,
       title: "Cannon Simulator",
       des: "A Java-based 2D cannon simulator. Rotate a cannon and launch rubber cannonballs at adjustable speed.",
       imgClassName: "rounded-2xl",
       img: "/cannonsim.jpg",
       iconLists: [""],
       link: "https://github.com/vconti1/Cannon",
-    },
-    {
-      id: 2,
-      title: "Under construction...",
-      des: "Completed projects will appear here.",
-      img: "/aerodynamicivy.JPG",
-      iconLists: [""],
-      link: "https://github.com/vconti1",
     },
     {
       id: 3,
