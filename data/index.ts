@@ -77,7 +77,7 @@ export const navItems = [
       des: "A simple, responsive weather app that provides real-time weather data based on user input. Built with Next.js.",
       img: "/better-weather-image.png",
       iconLists: [""],
-      link: "https://better-weather-evgm.vercel.app/",
+      link: "https://github.com/vconti1/weather-app",
     },
     {
       id: 2,
