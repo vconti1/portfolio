@@ -99,11 +99,11 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Under construction...",
-      des: "This project is not yet completed.",
-      img: "/under-construction.png",
+      title: "Raptors Who Code Website",
+      des: "Club website with job board, events, and landing page built using Next.js, Express.js, and Supabase.",
+      img: "/rwc_jobs_page.png",
       iconLists: [""], //"/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg" (file paths for images)
-      link: "https://github.com/vconti1",
+      link: "https://github.com/Raptors-Who-Code/rwc-website",
     },
   ];
   
