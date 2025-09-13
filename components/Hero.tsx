@@ -27,7 +27,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg: text-6xl"
             words="Building Reliable Software for the Modern Web"
             />
-            <p className="text-center md:tracking-wider pt-4 mb-4 text-sm md:text-lg lg:text-2xl"> Hi, I&apos;m Vincent, a computer science student at the University of Maryland!
+            <p className="text-center md:tracking-wider pt-4 mb-4 text-sm md:text-lg lg:text-2xl"> Hi, I&apos;m Vincent, a computer science student at UMD with hands-on experience building full-stack applications, dynamic websites, and responsive UIs.
             </p>
 
             <a href="#about">

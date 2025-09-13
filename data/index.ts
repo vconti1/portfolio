@@ -50,12 +50,12 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently studying embedded systems",
+      title: "Currently building a spotify clone!",
       description: "The Inside Scoop",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-15 bottom-15 md:w-50 w-50 opacity-50 scale-225",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/C_Logo.png",
+      img: "/Spotify_logo.png",
       spareImg: "",
     },
     {

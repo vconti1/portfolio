@@ -17,13 +17,11 @@ const RecentProjects = () => {
             id === 1 ? 'block sm:flex' : 'hidden sm:flex'} sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex sm:items-center justify-center sm:w-[570px] w-[80vw]`}>
           <PinContainer title={title} href = {link}>
             <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[20vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d] ">
-                    <img src="/bg.png" alt="bg-img"/>
-                </div>
+
                 <img
                 src={img}
                 alt={title}
-                className="z-10 absolute bottom-0 rounded-2xl"
+                className="z-10 lg:absolute rounded-2xl"
                 />
             </div>
 
