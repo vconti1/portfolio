@@ -9,7 +9,7 @@ import { FaLocationArrow } from 'react-icons/fa';
 const Hero = () => {
   return (
 
-<div className="flex h-screen w-full items-center justify-center overflow-hidden">
+<div className="flex h-screen w-full items-center justify-center overflow-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:none]">
       <div
         className={cn(
           "absolute inset-0 z-0",
@@ -20,7 +20,7 @@ const Hero = () => {
       {/* Radial gradient for the container to give a faded look */}
       <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] "/>
 
-      <div className="flex flex-col justify-center relative my-20 z-10">
+      <div className="flex flex-col justify-center relative my-20 z-10 ">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <h2 className="uppercase tracking-widest text-xs text-center max-w-80"> Precision-Driven Engineering </h2>
             <TextGenerateEffect

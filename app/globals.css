@@ -26,3 +26,12 @@ body {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
 }
+
+::-webkit-scrollbar {
+  display: none; 
+}
+
+html, body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
